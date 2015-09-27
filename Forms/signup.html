@@ -1,40 +1,53 @@
 <!Doctype html>
 <html lang="en">
-<head></head>
+<head>
+ <link rel="stylesheet" href="signup.css"/>
 <meta charset="UTF-8">
 <title>Sign up form</title>
 </head>
 <body>
    <div class="form">
     <form class="sign-up">
-        <h1 class="form">First Name</h1>
-        <input type="text" class="first">
-            <h1 class="form">Last Name</h1>
-            <input type="text" class="last">
+    <fieldset>
+       <legend>Contact Details</legend>
+        <label for="first-form" class="first">First Name
+        <input type="text" class="first"></label>
+            <label for="last" class="last">Last Name
+            <input type="text" class="last"></label>
              <!-- Email button-->
-        <h1 class="form">E-mail</h1>
-        <input type="url" class="email">
+        <label for="email" class="email-form">E-mail
+            <input type="url" class="email"></label>
             <!-- Gender button-->
-            <h1 class="gender">Gender</h1>
-            <input type="radio" name="sex" value="male" checked> Male
-            <input type="radio" name="sex" value="female"> Female
+        <label class="gender">Gender:</label>
+<input id="female" type="radio" name="gender"
+value="f">
+<label for="female">Female</label>
+<input id="male" type="radio" name="gender"
+value="m">
+<label for="male">Male</label>
+        </fieldset>
              <!-- Bio Section -->
-        <h1 class="bio">Bio</h1>
-        <textarea class="text-form" col="20" row="6">Write about yourself</textarea>
+    <fieldset>
+       <legend>Additional Information</legend>
+        <label for="bio" class="bio">Bio:</label>
+        <textarea class="text-form" cols="40" rows="10">Write about yourself</textarea>
             <!-- color css button-->
-            <h1 class="css-color">What is your favorite way of writing color in CSS?</h1>
+            <label for="css-color" class="fave">What is your favorite way of writing color in CSS?</label>
             <input type="radio" name="color" value="RGB" checked>RGB
             <input type="radio" name="color" value="hex"> HEX
             <input type="radio" name="color" value="HSL">HSL
             
              <!-- transporation button-->
              
-        <h1 class="transportation">Choice of transportation</h1>
-        <input type="radio" name="transporation-form" value="subway">Subway
-        <input type="radio" name="transporation-form" value="airplane">Airplane
-        <input type="radio" name="transporation-form" value="walking">By foot
-        <input type="radio" name="transporation-form" value="hoverboard">Hoverboard
-        <input type="radio" name="transporation-form" value="Rollerblades">Rollerblades
+        <label for="transportation" class="transport">Choice of transportation</label>
+<select name="transportation">
+ <option value="subway">subway</option>
+ <option value="rollerblades">Rollerblades</option>
+ <option value="walk">By foot</option>
+ <option value="airplane">Airplane</option>
+ <option value="hover">Hoverboard</option>
+ </select>
+   </fieldset>     
          <!-- Submit button-->
           <div class="Submit">
            <input type="submit" class="submit-button" value="send">

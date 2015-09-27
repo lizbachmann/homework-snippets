@@ -1,0 +1,10 @@
+.first, .last, .email-form {
+margin: 0 auto;
+    display: inline-block;
+}
+.transport, select, .fave, .bio, .gender {
+display: block;
+}
+.text-form {
+margin: 0;
+}
