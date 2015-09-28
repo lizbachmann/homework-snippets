@@ -3,13 +3,23 @@
 <head>
  <link rel="stylesheet" href="signup.css"/>
 <meta charset="UTF-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <title>Sign up form</title>
 </head>
 <body>
-   <div class="form">
+<div class="container-fluid">
+   <div class="row">
+    <div class="col-md-4" style="background-color: pink">
     <form class="sign-up">
-    <fieldset>
-       <legend>Contact Details</legend>
+    
+       <h2>Contact Details</h2>
         <label for="first-form" class="first">First Name
         <input type="text" class="first"></label>
             <label for="last" class="last">Last Name
@@ -25,10 +35,14 @@ value="f">
 <input id="male" type="radio" name="gender"
 value="m">
 <label for="male">Male</label>
-        </fieldset>
+       
+        </div>
+            </div>
              <!-- Bio Section -->
-    <fieldset>
-       <legend>Additional Information</legend>
+        <div class="row">
+            <div class="col-md-4" style="background-color: yellow">
+    
+       <h2>Additional Information</h2>
         <label for="bio" class="bio">Bio:</label>
         <textarea class="text-form" cols="40" rows="10">Write about yourself</textarea>
             <!-- color css button-->
@@ -47,12 +61,17 @@ value="m">
  <option value="airplane">Airplane</option>
  <option value="hover">Hoverboard</option>
  </select>
-   </fieldset>     
+
+            </div>
+        </div>    
          <!-- Submit button-->
-          <div class="Submit">
+          <div class="row">
+          <div class="col-md-4" style="background-color: grey">
            <input type="submit" class="submit-button" value="send">
+              </div>
            </div>
-        </div>
+       
     </form>
+    </div>
 </body>
 </html>
