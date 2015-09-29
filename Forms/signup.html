@@ -21,20 +21,20 @@
       <div class="form-group">
        <h2>Contact Details</h2>
         <label for="first-form" class="first">First Name
-        <input type="text" class="first"></label>
+        <input type="text" id="first"></label>
             <label for="last" class="last">Last Name
-            <input type="text" class="last"></label>
+            <input type="text" id="last"></label>
              <!-- Email button-->
-        <label for="email" class="email-form">E-mail
-            <input type="url" class="email"></label>
+        <label for="email" class="email">E-mail
+            <input type="url" id="email"></label>
             <!-- Gender button-->
         <label class="gender">Gender:</label>
+        <label for="female">Female
 <input id="female" type="radio" name="gender"
-value="f">
-<label for="female">Female</label>
+value="f"></label>
+<label for="male">Male
 <input id="male" type="radio" name="gender"
-value="m">
-<label for="male">Male</label>
+value="m"></label>
        
         </div>
             </div>
@@ -44,12 +44,12 @@ value="m">
     
        <h2>Additional Information</h2>
         <label for="bio" class="bio">Bio:</label>
-        <textarea class="text-form" cols="40" rows="10">Write about yourself</textarea>
+        <textarea id="bio" cols="40" rows="10">Write about yourself</textarea>
             <!-- color css button-->
             <label for="css-color" class="fave">What is your favorite way of writing color in CSS?</label>
-            <input type="radio" name="color" value="RGB" checked>RGB
-            <input type="radio" name="color" value="hex"> HEX
-            <input type="radio" name="color" value="HSL">HSL
+                <label><input type="radio" name="color" value="RGB" checked>RGB</label>
+                <label><input type="radio" name="color" value="hex"> HEX</label>
+                <label><input type="radio" name="color" value="HSL">HSL</label>
             
              <!-- transporation button-->
              
