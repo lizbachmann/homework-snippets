@@ -1,1 +1,81 @@
 
+placeholder-color { #aaa;
+}
+$label-color: #333
+$form-width: 320px
+$label-width: 100px
+$transition-duration: .25s
+
+* {
+  box-sizing: border-box
+}
+form {
+  width: $form-width
+  margin: 30px auto
+  font:
+    family: Helvetica, Arial, sans-serif
+    size: 16px
+  transform: translateZ(0)
+}
+  .field
+    position: relative
+    margin-bottom: 10px
+    height: 40px
+    
+    .placeholder-label
+      position: absolute
+      top: 14px
+      left: 12px
+      font-weight: 300
+      color: $placeholder-color
+      cursor: text
+      z-index: 200
+      transition: all $transition-duration
+        
+      &:after
+        content: ':'
+        opacity: 0
+        color: $label-color
+        transition: all $transition-duration
+      
+    .placeholder-input
+      position: absolute
+      width: 100%
+      padding: 10px
+      border-radius: 10px
+      border: 1px solid $placeholder-color
+      font-size: 16px
+      z-index: 100
+      transition: all $transition-duration
+      
+      &:focus,
+      &.not-empty
+        margin-left: $label-width
+        width: $form-width - $label-width
+        outline: none
+        
+        & + .placeholder-label
+          color: $label-color
+          cursor: default
+          
+          &:after
+            opacity: 1
+          
+//--- CODEPEN SPECIFIC THINGS
+
+body
+  font:
+    family: Helvetica, Arial, sans-serif
+    weight: 300
+
+h1
+  margin-top: 50px
+  font-weight: 300
+  color: #333
+  text-align: center
+    
+.explanation
+  width: 500px
+  margin: 0 auto
+  line-height: 1.5
+  text-align: center
