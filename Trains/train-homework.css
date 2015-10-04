@@ -439,38 +439,58 @@ body {
 background: url(images/hilly-landscape.jpg) no-repeat;
     background-size: cover;
 }
-.train img{
-display: inline;
-    width: auto;
-  
+h1 {
+text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+    font-family: 'Montserrat', sans-serif;
 }
 ul {
     position: relative;
     top: 400px;
-    left: 50px;
     width: auto;
     height: auto;
 list-style: none;
     margin: 0 auto;  
 }
-li {
-    
+.train img{
+    position: relative;
 display: inline;
-
-}
-.track-inline {
-    margin: 0;
-display: inline;}
-
-.train img {
-display: inline;
+    width: auto;
     width: 100px;
     height: 100px;
 }
-.track img {
- width: 70px;
-    height: 40px;
+  
+.car-1 {
+position: relative;
+    top: 5px;  
+    }
+.car-2 {
+position: relative;
+   right: 10px;
+    top: 8px;
 }
+.car-3 {
+position:relative;
+    right: 20px;
+    top: 8px;
+}
+
+li {   
+display: inline;
+}
+.track {
+  height: 30px;
+  background: url(images/train-track-pattern.png) repeat center;
+  transition: height .3s ease;
+    position: relative;
+    top: 400px;   
+    
+}
+
+
+
 
 /* 
   Media Queries ========================================================================== */
@@ -480,19 +500,13 @@ display: inline;
 
 @media screen and (min-width: 570px) {
   
-.track-inline {
-    margin: 0;
-display: inline;}
 
 .train img {
 display: inline;
     width: 150px;
     height: 150px;
 }
-.track img {
- width: 110px;
-    height: 70px;
-}
+
 }
 @media screen and (min-width : 850px) {
     ul {
@@ -500,19 +514,14 @@ display: inline;
         top: 400px;
         left: 130px;
     }
-.track-inline {
-    margin: 0;
-display: inline;}
+
 
 .train img {
 display: inline;
     width: 200px;
     height: 170px;
 }
-.track img {
- width: 160px;
-    height: 70px;
-}
+
 }
 @media screen and (min-width: 1400px) {
     ul {
@@ -520,18 +529,11 @@ display: inline;
         top: 400px;
         left: 130px;
     }
-.track-inline {
-    margin: 0;
-display: inline;}
+
 
 .train img {
 display: inline;
     width: 250px;
     height: 200px;
-}
-.track img {
- width: 160px;
-    height: 70px;
-}
 }
 }
