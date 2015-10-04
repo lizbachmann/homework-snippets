@@ -446,47 +446,32 @@ text-align: center;
     top: 400px;
     font-family: 'Montserrat', sans-serif;
 }
-ul {
-    position: relative;
-    top: 400px;
-    width: auto;
-    height: auto;
-list-style: none;
-    margin: 0 auto;  
-}
-.train img{
-    position: relative;
-display: inline;
-    width: auto;
+
+.train-car {
+display: inline-block;
     width: 100px;
-    height: 100px;
+    margin: 0 -4px;
+} 
+.train-car img {
+width: 100%;
 }
-  
-.car-1 {
-position: relative;
-    top: 5px;  
-    }
-.car-2 {
-position: relative;
-   right: 10px;
-    top: 8px;
-}
-.car-3 {
-position:relative;
-    right: 20px;
-    top: 8px;
+.train {
+position: absolute;
+    bottom: 55px;
+    text-align: center;
+    width: 100%;
 }
 
-li {   
-display: inline;
-}
+
 .track {
   height: 30px;
-  background: url(images/train-track-pattern.png) repeat center;
+    width: 100%;
+  background: url(images/train-track-pattern.png) repeat-x center;
   transition: height .3s ease;
-    position: relative;
-    top: 400px;   
-    
+    position: absolute;
+    bottom: 40px;
+    z-index: 1px; 
+    background-size: auto 12px;
 }
 
 
@@ -495,45 +480,34 @@ display: inline;
 /* 
   Media Queries ========================================================================== */
 @media screen and (min-width: 400px) {
-
+    .track {
+    
+    }
 }
 
 @media screen and (min-width: 570px) {
   
-
-.train img {
-display: inline;
+    .train-car {
     width: 150px;
-    height: 150px;
-}
+    }
 
 }
 @media screen and (min-width : 850px) {
-    ul {
-    position: relative;
-        top: 400px;
-        left: 130px;
-    }
 
-
-.train img {
-display: inline;
+    .train-car {
     width: 200px;
-    height: 170px;
-}
-
-}
-@media screen and (min-width: 1400px) {
-    ul {
-    position: relative;
-        top: 400px;
-        left: 130px;
+    }
+    .track {
+     background-size: auto 18px;
     }
 
-
-.train img {
-display: inline;
-    width: 250px;
-    height: 200px;
 }
+@media screen and (min-width: 1300px) {
+
+    .train-car {
+    width: 250px;
+    }
+     .track {
+     background-size: auto 20px;
+    }
 }
